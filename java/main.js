@@ -76,3 +76,44 @@ closeUserMenuBtn.addEventListener("click", () => {
   userMenu.classList.toggle("show");
   layer.classList.toggle("lay-show");
 });
+
+// initialize  the swiper
+
+const swiper = new Swiper(".swiper-container", {
+  loop: true, // Enables infinite looping
+  autoplay: {
+    delay: 1000, // 1-second delay between slides
+    disableOnInteraction: false, // Continue autoplay after interaction
+  },
+  pagination: {
+    el: ".swiper-pagination", // Pagination element
+    clickable: true, // Allows users to click on pagination bullets
+  },
+});
+
+// articles silder
+
+const swiperArticles = new Swiper(".swiper-articles", {
+  slidesPerView: 3, // Show 3 slides at a time
+  spaceBetween: 20, // Space between slides (optional)
+  loop: true, // Enable infinite looping
+  autoplay: {
+    delay: 3000, // Auto-slide every 3 seconds
+    disableOnInteraction: false, // Keep autoplay after interaction
+  },
+  navigation: {
+    nextEl: ".swiper-button-next", // Next button
+    prevEl: ".swiper-button-prev", // Previous button
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 2, // Show 3 slides on tablets and larger
+    },
+    0: {
+      slidesPerView: 1, // Show 1 slide on phones
+    },
+  },
+});

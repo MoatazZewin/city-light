@@ -16,6 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Main Template css File -->
@@ -47,7 +52,7 @@
                 <i class="fa-solid fa-cart-shopping"></i
               ></span>
             </div>
-            <span class="top"><i class="fa-solid fa-heart heart"></i></span>
+            <a class="top"><i class="fa-solid fa-heart heart"></i></a>
           </div>
           <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -188,7 +193,7 @@
           </div>
         </div>
       </div>
-
+      <!-- Start main menu -->
       <div class="main-menu">
         <div class="search">
           <input type="text" placeholder="ابحث عن منتجات..." />
@@ -231,7 +236,9 @@
           </li>
         </ul>
       </div>
+      <!-- Start main menu -->
 
+      <!-- Start User menu -->
       <div class="user-account" id="user-account">
         <h4>
           تسجيل الدخول<span id="close-btn"
@@ -263,7 +270,9 @@
           </div>
         </form>
       </div>
+      <!-- End User menu -->
 
+      <!-- Start cart menu -->
       <div class="user-cart" id="user-cart">
         <h4>
           سلة المشتريات<span id="close-btn-cart"
@@ -277,9 +286,450 @@
         </div>
       </div>
 
+      <!-- End cart menu -->
+
+      <!-- layer to hidden content behind the meun -->
       <div id="layer" class="layer"></div>
     </header>
 
+    <!-- start banner section -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner-cont">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="images/banner1.jpg" alt="Image 1" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/banar-7.jpg" alt="Image 2" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/banar3.jpg" alt="Image 3" /></a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Pagination -->
+          </div>
+
+          <div class="left-image">
+            <a href="#"><img src="images/banar5.jpg" alt="" /></a>
+
+            <a href="#"><img src="images/banar-6.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End banner section -->
+
+    <!-- Start categories -->
+
+    <div class="categories">
+      <div class="container">
+        <h2>تسوق الاقسام</h2>
+        <div class="all">
+          <div class="box">
+            <a href="#"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="#"
+              ><img src="images/تراك لايت.png" alt="" />
+              <h3>نجف</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="#"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="#"
+              ><img src="images/تراك لايت.png" alt="" />
+              <h3>نجف</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="#"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="#"
+              ><img src="images/تراك لايت.png" alt="" />
+              <h3>نجف</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="#"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="#"
+              ><img src="images/تراك لايت.png" alt="" />
+              <h3>نجف</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="#"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End categories -->
+
+    <!-- Start ads -->
+    <div class="ads">
+      <div class="container">
+        <div class="right">
+          <img src="images/banar3.jpg" alt="" />
+          <img src="images/banar5.jpg" alt="" />
+        </div>
+
+        <div class="left">
+          <img src="images/banar2.jpg" alt="" />
+          <img src="images/banner1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End ads -->
+
+    <!-- Start features -->
+    <div class="features">
+      <div class="container">
+        <h3>منتجات مميزه</h3>
+        <div class="buttons">
+          <h4>أحدث المنتجات</h4>
+          <h4>الأكثر مبيعاً</h4>
+          <h4>تخفيضات</h4>
+        </div>
+        <div class="products">
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-1.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-2.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-3.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-1.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-2.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-3.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-2.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-3.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End features -->
+
+    <!-- Start articles -->
+    <div class="articles">
+      <div class="container">
+        <h3>المقالات</h3>
+
+        <div class="content">
+          <div class="swiper-articles">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banner1.jpg" alt="Image 1" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar2.jpg" alt="Image 2" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar-8.jpg" alt="Image 3" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banner1.jpg" alt="" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar5.jpg" alt="Image 5" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banner1.jpg" alt="Image 1" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar2.jpg" alt="Image 2" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar-8.jpg" alt="Image 3" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banner1.jpg" alt="" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar5.jpg" alt="Image 5" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End articles -->
+
+    <!-- Start services -->
+    <div class="services">
+      <div class="box">
+        <img src="images/استبدال.png" alt="" />
+        <h4>الإستبدال و الإسترجاع</h4>
+      </div>
+      <div class="box">
+        <img src="images/خدمه.png" alt="" />
+        <h4>خدمة العملاء</h4>
+      </div>
+      <div class="box">
+        <img src="images/دفع.png" alt="" />
+        <h4>دفع أون لاين</h4>
+      </div>
+      <div class="box">
+        <img src="images/شحن.png" alt="" />
+        <h4>شحن مجاني</h4>
+      </div>
+    </div>
+
+    <!-- End services -->
+
+    <!-- Start footer -->
+    <div class="footer">
+      <div class="useful">
+        <h4>روابط مفيدة</h4>
+        <ul>
+          <li><a href="#">الأكثر مبيعا في إنارات</a></li>
+          <li><a href="#">ترشيحات إنارات</a></li>
+          <li><a href="#">أحدث المنتجات</a></li>
+        </ul>
+      </div>
+      <div class="quick">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="3">الرئيسية</a></li>
+          <li><a href="#">عن إنارات</a></li>
+          <li><a href="#">المقالات</a></li>
+          <li><a href="#">سياسة إنارات</a></li>
+        </ul>
+      </div>
+
+      <div class="about">
+        <h2>سيتى لايت</h2>
+        <p>
+          سيتى لايت أكبر متجر إلكتروني متخصص في بيع وحدات الإضاءة والديكور في
+          السعوديه. يمكنك أن تجد وتطلب كل احتياجاتك من وحدات الإضاءة والديكور في
+          مكان واحد في أي وقت ومن أي مكان مع التوصيل لأي مكان في مصر
+        </p>
+      </div>
+    </div>
+    <!-- End footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="java/main.js"></script>
   </body>
 </html>
