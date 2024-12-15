@@ -42,7 +42,7 @@ btnUserMenu.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   if (+window.scrollY > 0) {
     topDiscountBar.classList.add("discount-hidden");
-    header.classList.add("sticky");
+    // header.classList.add("sticky");
   } else {
     topDiscountBar.classList.remove("discount-hidden");
   }
@@ -117,3 +117,53 @@ const swiperArticles = new Swiper(".swiper-articles", {
     },
   },
 });
+
+const swiperNewArrival = new Swiper(".swiper-new-arrival", {
+  slidesPerView: 3, // Show 3 items
+  spaceBetween: 20, // Add space between slides
+  loop: true, // Enable infinite looping
+  autoplay: {
+    delay: 3000, // Auto-slide every 3 seconds
+    disableOnInteraction: false, // Keep autoplay after interaction
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 2, // Show 3 slides on tablets and larger
+    },
+    0: {
+      slidesPerView: 1, // Show 1 slide on phones
+    },
+  },
+});
+
+// const swiperNewArrival = new Swiper(".swiper-new-arrival", {
+//   slidesPerView: 3, // Show 3 slides at a time
+//   spaceBetween: 20, // Space between slides (optional)
+//   loop: true, // Enable infinite looping
+//   // autoplay: {
+//   //   delay: 3000, // Auto-slide every 3 seconds
+//   //   disableOnInteraction: false, // Keep autoplay after interaction
+//   // },
+//   navigation: {
+//     nextEl: ".swiper-button-next", // Next button
+//     prevEl: ".swiper-button-prev", // Previous button
+//   },
+//   breakpoints: {
+//     992: {
+//       slidesPerView: 3,
+//     },
+//     600: {
+//       slidesPerView: 2, // Show 3 slides on tablets and larger
+//     },
+//     0: {
+//       slidesPerView: 1, // Show 1 slide on phones
+//     },
+//   },
+// });
