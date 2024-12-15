@@ -1148,6 +1148,7 @@ header .container .header-bottom > ul > li:hover .list-n {
 .articles {
   padding: 50px 0;
   text-align: center;
+  position: relative;
 }
 
 .articles h3 {
@@ -1155,7 +1156,7 @@ header .container .header-bottom > ul > li:hover .list-n {
 }
 
 .articles .content {
-  position: relative;
+  padding: 0 20px;
 }
 
 .swiper-articles {
@@ -1198,11 +1199,13 @@ header .container .header-bottom > ul > li:hover .list-n {
 }
 
 .swiper-articles .swiper-button-prev {
-  right: -30px;
+  right: 0px;
+  top: 60%;
 }
 
 .swiper-articles .swiper-button-next {
-  left: -30px;
+  left: 0px;
+  top: 60%;
 }
 /* End articles */
 
@@ -1242,5 +1245,23 @@ header .container .header-bottom > ul > li:hover .list-n {
 
 .footer .quick {
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .footer > div {
+    width: auto;
+  }
+
+  .footer .useful {
+    text-align: right;
+  }
+
+  .footer .quick {
+    text-align: right;
+  }
 }
 /* End footer */
