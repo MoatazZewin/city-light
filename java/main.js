@@ -122,10 +122,10 @@ const swiperNewArrival = new Swiper(".swiper-new-arrival", {
   slidesPerView: 3, // Show 3 items
   spaceBetween: 20, // Add space between slides
   loop: true, // Enable infinite looping
-  autoplay: {
-    delay: 3000, // Auto-slide every 3 seconds
-    disableOnInteraction: false, // Keep autoplay after interaction
-  },
+  // autoplay: {
+  //   delay: 3000, // Auto-slide every 3 seconds
+  //   disableOnInteraction: false, // Keep autoplay after interaction
+  // },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
