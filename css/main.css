@@ -2202,8 +2202,6 @@ header .container .header-bottom > ul > li:hover .list-n {
 }
 
 .footer-not-found {
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 
@@ -2325,3 +2323,26 @@ textarea {
 }
 
 /* End contact us  */
+
+/* Start FQAs Styling */
+
+.faq-section {
+  margin-top: 200px;
+}
+
+.faq-section .container {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 20px;
+  gap: 10px;
+}
+
+/* End FQAs Styling */
+
+/* Start police styling */
+.police {
+  margin-top: 240px;
+  margin-bottom: 50px;
+}
+/* End police styling */
