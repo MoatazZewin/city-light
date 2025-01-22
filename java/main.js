@@ -59,10 +59,10 @@ cartClose.addEventListener("click", () => {
   cartMenu.classList.toggle("show");
   layer.classList.toggle("lay-show");
 });
-cartBack.addEventListener("click", () => {
-  cartMenu.classList.toggle("show");
-  layer.classList.toggle("lay-show");
-});
+// cartBack.addEventListener("click", () => {
+//   cartMenu.classList.toggle("show");
+//   layer.classList.toggle("lay-show");
+// });
 cartButton.addEventListener("click", () => {
   cartMenu.classList.toggle("show");
   layer.classList.toggle("lay-show");
@@ -101,7 +101,6 @@ layer.addEventListener("click", () => {
 });
 
 userOpenBtn.addEventListener("click", () => {
-  console.log("hello");
   userMenu.classList.toggle("show");
   layer.classList.toggle("lay-show");
 });
