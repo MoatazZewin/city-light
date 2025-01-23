@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
+    <title>Checkout</title>
     <!-- Google fonts cairo -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -287,152 +287,102 @@
     <!-- end header -->
 
     <!-- Start path after header -->
-    <div class="path">
+    <div class="path order-received">
       <a href="cart.html">سله المشتريات</a>
       <i class="fa-solid fa-arrow-left"></i>
-      <a href="">المعاينه</a>
+      <a href="#">المعاينه</a>
       <i class="fa-solid fa-arrow-left"></i>
-      <a href="">انهاء الطلب</a>
+      <a href="#">انهاء الطلب</a>
     </div>
     <!-- end path after header -->
 
-    <!--Start cart content  -->
-    <div class="cart-cont-page">
+    <!-- Start order-contant -->
+    <div class="order">
       <div class="container">
-        <div class="right">
-          <table>
-            <thead>
-              <th class="cart-prod-remove"></th>
-              <th class="cart-prod-thumbnail"></th>
-              <th class="cart-prod-name">المنتج</th>
-              <th class="cart-prod-price">السعر</th>
-              <th class="cart-prod-quantity">الكميه</th>
-              <th class="cart-prod-subtotal">الاجمالى</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="cart-prod-remove">x</td>
-                <td class="cart-prod-thumbnail">
-                  <a href="product-detalis.html">
-                    <img
-                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
-                      alt="prodcut-image"
-                    />
-                  </a>
-                </td>
-                <td class="cart-prod-name">
-                  <a href="product-detalis.html">معلقه بايب ال 1 لمبه اسود</a>
-                </td>
-                <td class="cart-prod-price" data-title="السعر">78 ر.س</td>
-                <td class="cart-prod-quantity" data-title="الكميه">
-                  <div class="counter-cart">
-                    <button id="cart-decrement">-</button>
-                    <p id="cart-count">1</p>
-                    <button id="cart-increment">+</button>
-                  </div>
-                </td>
-                <td class="cart-prod-subtotal" data-title="الاجمالى">
-                  141 ر.س
-                </td>
-              </tr>
-              <tr>
-                <td class="cart-prod-remove">x</td>
-                <td class="cart-prod-thumbnail">
-                  <a href="product-detalis.html">
-                    <img
-                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
-                      alt=""
-                    />
-                  </a>
-                </td>
-                <td class="cart-prod-name">
-                  <a href="product-detalis.html">معلقه بايب ال 1 لمبه اسود</a>
-                </td>
-                <td class="cart-prod-price" data-title="السعر">78 ر.س</td>
-                <td class="cart-prod-quantity" data-title="الكميه">
-                  <div class="counter-cart">
-                    <button id="cart-decrement">-</button>
-                    <p id="cart-count">1</p>
-                    <button id="cart-increment">+</button>
-                  </div>
-                </td>
-                <td class="cart-prod-subtotal" data-title="الاجمالى">
-                  141 ر.س
-                </td>
-              </tr>
-              <tr>
-                <td class="cart-prod-remove">x</td>
-                <td class="cart-prod-thumbnail">
-                  <a href="product-detalis.html">
-                    <img
-                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
-                      alt=""
-                    />
-                  </a>
-                </td>
-                <td class="cart-prod-name">
-                  <a href="product-detalis.html">معلقه بايب ال 1 لمبه اسود</a>
-                </td>
-                <td class="cart-prod-price" data-title="السعر">78 ر.س</td>
-                <td class="cart-prod-quantity" data-title="الكميه">
-                  <div class="counter-cart">
-                    <button id="cart-decrement">-</button>
-                    <p id="cart-count">1</p>
-                    <button id="cart-increment">+</button>
-                  </div>
-                </td>
-                <td class="cart-prod-subtotal" data-title="الاجمالى">
-                  141 ر.س
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <p class="success-thanks-order">
+          تم إستلام طلبك بنجاح، شكرا لتسوقكم بستى لايت
+        </p>
 
-          <div class="table-footer">
-            <div class="right">
-              <input
-                type="text"
-                name="القسيمة"
-                id=""
-                placeholder="رمز القسيمه"
-              />
-              <button>تفعيل الكوبون</button>
-            </div>
-            <button>تحديث السله</button>
+        <ul class="list-over-view">
+          <li class="order-overview-data order-view">
+            رقم الطلب:
+            <strong>308320</strong>
+          </li>
+          <li class="order-overview-data date">
+            التاريخ:
+            <strong>23/01/2025</strong>
+          </li>
+          <li class="order-overview-data email">
+            Email:
+            <strong>m@gmail.com</strong>
+          </li>
+          <li class="order-overview-data">
+            الاجمالى:
+            <strong>1400 ر.س</strong>
+          </li>
+          <li class="order-overview-data">
+            طريقةالدفع:
+            <strong> الدفع عن الاستلام </strong>
+          </li>
+        </ul>
+
+        <h3>تفاصيل الطلب</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>المنتج</th>
+              <th>المجموع</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="prodc-name">أبليك فينال 4 لمبة أسود إضاءة أصفر × 2</td>
+              <td class="price-amount">318 ر.س</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>سعر المنتجات</th>
+              <td class="price-amount">1100 ر.س</td>
+            </tr>
+            <tr>
+              <th>الشحن حسب المنطقه</th>
+              <td class="price-amount">290 ر.س</td>
+            </tr>
+            <tr>
+              <th>رسوم الدفع عند الاستلام</th>
+              <td class="price-amount">10 ر.س</td>
+            </tr>
+
+            <tr>
+              <th>الاجمالى</th>
+              <td class="price-amount">1400 ر.س</td>
+            </tr>
+            <tr>
+              <th>الاجراء:</th>
+              <td><button class="btn-view-order">معاينه</button></td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <div class="client-details">
+          <h3>بيانات العميل</h3>
+          <div class="all">
+            <p>اسم العميل</p>
+            <p class="client-name">Ahmed</p>
+            <p>العنوان</p>
+            <p class="client-address">helwan</p>
+            <p>المحافظه</p>
+            <p class="client-area">cairo</p>
+            <p>الجوال</p>
+            <p class="client-phone">01136-259-999</p>
+            <p>email</p>
+            <p class="client-phone">m@gmail.com</p>
           </div>
-        </div>
-
-        <div class="left">
-          <h3>إجمالي سلة المشتريات</h3>
-          <ul>
-            <li><span>776 ر.س </span><span>الاجمالى </span></li>
-            <li>
-              <div>
-                <p><span>29ر.س</span> شحن</p>
-                <p>Shipping options will be updated during checkout.</p>
-                <div class="cal-shipping">
-                  <button id="btn-cal-shipping">Calculate shipping</button>
-                  <div class="shipping-list" id="cal-shipping-list">
-                    <input type="text" value="Saudi Arabia" disabled />
-                    <input type="text" placeholder="الحى" />
-                    <input type="text" placeholder="المدينه" />
-                    <input type="text" placeholder="الرقم البريدى" />
-                    <button>Update</button>
-                  </div>
-                </div>
-              </div>
-              <p>الشحن</p>
-            </li>
-            <li>
-              <span>المجموع</span>
-              <span class="price">805 ر.س</span>
-            </li>
-          </ul>
-          <button>استكمال الدفع</button>
         </div>
       </div>
     </div>
-    <!--End cart content  -->
+    <!-- End order-contant -->
 
     <!-- start footer -->
     <div class="footer footer-not-found">
@@ -465,6 +415,6 @@
     </div>
     <!-- End footer -->
     <!-- <script src="java/main.js"></script> -->
-    <script src="java/cart.js"></script>
+    <script src="java/checkout.js   "></script>
   </body>
 </html>
