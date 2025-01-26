@@ -110,3 +110,51 @@ closeBtn.addEventListener("click", () => {
   filterMenu.classList.remove("popup-container-show");
   filterLayer.classList.remove("lay-show");
 });
+
+var startPage = 1;
+var endPage = 10;
+var pagination = document.getElementsByClassName("pagination")[0];
+
+function createPagination() {
+  let str = startPage === 1 ? "class=prevent-e" : "class=btn-active";
+  let html = `<button   id="prev" ${str} >${
+    document.dir === "rtl"
+      ? `<i class="fa-solid fa-chevron-right"></i></i>`
+      : `<i class="fa-solid fa-chevron-left"></i></i>`
+  }</button>`;
+
+  for (let i = startPage; i <= endPage; i++) {
+    if (+startPage === 1) {
+      html += `<span ${i == startPage ? "class=active-page" : ""}>${i}</span>`;
+    } else {
+      if (+endPage - +i === 1 || +endPage - +i === 0) {
+        console.log(+endPage - +i);
+        if (+endPage - +i === 1) {
+          html += `<span ${
+            i == startPage ? "class=active-page" : ""
+          } >${midPage}</span>`;
+        } else {
+          html += `<span ${
+            i == startPage ? "class=active-page" : ""
+          } >${totalPages}</span>`;
+        }
+      } else {
+        html += `<span ${
+          i == startPage ? "class=active-page" : ""
+        } >${i}</span>`;
+      }
+    }
+    realEndPage = endPage - 2;
+  }
+  html += `<button id="next"  class="btn-active" onclick="nextAndPrev(this)"  >${
+    document.dir === "rtl"
+      ? `<i class="fa-solid fa-chevron-left"></i>`
+      : `<i class="fa-solid fa-chevron-right"></i>`
+  }</button>`;
+  pagination.innerHTML = html;
+  activeSpan = document.querySelectorAll("span")[0];
+  console.log(activeSpan);
+  activeSpan.classList.add("active.page");
+}
+
+createPagination();

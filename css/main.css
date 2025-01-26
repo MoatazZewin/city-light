@@ -1800,7 +1800,7 @@ header .container .header-bottom > ul > li:hover .list-n {
 /* start main content category */
 .cat-content {
   display: flex;
-  height: 100vh;
+  padding-bottom: 50px;
 }
 
 .cat-content .right {
@@ -1831,6 +1831,12 @@ header .container .header-bottom > ul > li:hover .list-n {
   border-bottom: 1px solid #e4e4e4;
   padding-bottom: 15px;
   cursor: pointer;
+}
+
+@media (min-width: 950px) {
+  .price-slider h5 {
+    display: none;
+  }
 }
 
 .price-slider h4 {
@@ -1948,8 +1954,11 @@ header .container .header-bottom > ul > li:hover .list-n {
   margin-top: 15px;
   border: none;
   background-color: #f7f7f7;
-  color: black;
-  padding: 5px 10px;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: var(--main-color);
+  border-radius: 5px;
 }
 
 .cat-content .left {
@@ -1965,7 +1974,8 @@ header .container .header-bottom > ul > li:hover .list-n {
 
 .cat-content .left .head {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 5px;
 }
 
 @media (max-width: 600px) {
@@ -1984,9 +1994,15 @@ header .container .header-bottom > ul > li:hover .list-n {
   font-size: 1.2rem;
 }
 
+.cat-content .left .products-nmuber {
+  display: flex;
+  gap: 10px;
+}
+
 .cat-content .left .sub-filter {
   display: flex;
   gap: 10px;
+  margin-inline-start: auto;
 }
 
 @media (max-width: 600px) {
@@ -3173,3 +3189,65 @@ ul.list-over-view li:not(:last-child) {
 }
 
 /* start end order received */
+
+/* start pagination */
+
+.pagination {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 700px) {
+  .pagination {
+    width: 90%;
+    padding: 40px 0;
+  }
+}
+
+.pagination button {
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.btn-active {
+  background-color: white !important;
+  color: black !important;
+}
+
+.pagination button:first-of-type {
+  color: #212529;
+}
+
+.prevent-e i {
+  pointer-events: none;
+  color: gray !important;
+}
+
+.pagination span {
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 34px;
+  height: 34px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.active-page {
+  border: 1px solid black;
+}
+
+/* end pagination */

@@ -300,71 +300,75 @@
     <div class="cat-content">
       <div id="layer-filter-product" class="layer"></div>
       <div class="right" id="filter-menu">
-        <div class="price-slider">
-          <h5>
-            <span id="close-btn-filter"
-              ><i class="fa-solid fa-xmark"></i>اغلق</span
-            >
-          </h5>
-          <h4>تصفية حسب السعر</h4>
-          <div class="price-content">
-            <label for="">السعر</label>
-            <p id="min-value">$50</p>
-            -
-            <p id="max-value">$500</p>
-          </div>
-          <div class="range-slider" dir="ltr">
-            <div class="range-fill" id="range-slider-id"></div>
+        <form action="">
+          <div class="price-slider">
+            <h5>
+              <span id="close-btn-filter"
+                ><i class="fa-solid fa-xmark"></i>اغلق</span
+              >
+            </h5>
+            <h4>تصفية حسب السعر</h4>
+            <div class="price-content">
+              <label for="">السعر</label>
+              <p id="min-value">$50</p>
+              -
+              <p id="max-value">$500</p>
+            </div>
+            <div class="range-slider" dir="ltr">
+              <div class="range-fill" id="range-slider-id"></div>
 
-            <input
-              type="range"
-              class="min-price"
-              value="100"
-              min="10"
-              max="500"
-              step="10"
-            />
+              <input
+                type="range"
+                class="min-price"
+                value="100"
+                min="10"
+                max="500"
+                step="10"
+                name="min-price"
+              />
 
-            <input
-              type="range"
-              class="max-price"
-              value="250"
-              min="10"
-              max="500"
-              step="10"
-            />
-          </div>
-        </div>
-        <div class="brand-filter">
-          <p>تصفية حسب الماركة</p>
-          <div class="search">
-            <input type="text" name="brand" placeholder="ابحث عن الماركه" />
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="brands">
-            <div class="brand">
-              <label>
-                <input type="checkbox" />
-                Dlight
-              </label>
-            </div>
-            <div class="brand">
-              <label>
-                <input type="checkbox" />
-                Kandil Egypt
-              </label>
-            </div>
-            <div class="brand">
-              <label>
-                <input type="checkbox" />
-                Dlight
-              </label>
+              <input
+                type="range"
+                class="max-price"
+                value="250"
+                min="10"
+                max="500"
+                step="10"
+                name="max-price"
+              />
             </div>
           </div>
-        </div>
-        <div class="btn">
-          <button>تصفية</button>
-        </div>
+          <div class="brand-filter">
+            <p>تصفية حسب الماركة</p>
+            <div class="search">
+              <input type="text" name="brand" placeholder="ابحث عن الماركه" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="brands">
+              <div class="brand">
+                <label>
+                  <input type="checkbox" name="brand-check" value="Dlight" />
+                  Dlight
+                </label>
+              </div>
+              <div class="brand">
+                <label>
+                  <input type="checkbox" name="brand-check" value="Kandil" />
+                  Kandil Egypt
+                </label>
+              </div>
+              <div class="brand">
+                <label>
+                  <input type="checkbox" name="brand-check" />
+                  Dlight
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <button>تصفية</button>
+          </div>
+        </form>
       </div>
       <div class="left">
         <div class="head">
@@ -373,7 +377,10 @@
             /
             <div class="category">ثريات</div>
           </div>
-
+          <div class="products-nmuber">
+            المعروض
+            <p>2000/100</p>
+          </div>
           <div class="sub-filter">
             <div class="grid-3" id="btn-grid-3">
               <span></span><span></span><span></span><span></span><span></span
@@ -602,6 +609,39 @@
       </div>
     </div>
     <!-- End Popup details -->
+
+    <div class="pagination" lazy></div>
+    <!-- Start footer -->
+    <div class="footer">
+      <div class="useful">
+        <h4>روابط مفيدة</h4>
+        <ul>
+          <li><a href="#">الأكثر مبيعا في ستى لايت</a></li>
+          <li><a href="#">ترشيحات ستى لايت</a></li>
+          <li><a href="#">أحدث المنتجات</a></li>
+        </ul>
+      </div>
+      <div class="quick">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="3">الرئيسية</a></li>
+          <li><a href="#">عن ستى لايت</a></li>
+          <li><a href="#">المقالات</a></li>
+          <li><a href="#">سياسة ستى لايت</a></li>
+        </ul>
+      </div>
+
+      <div class="about-footer">
+        <h2>سيتى لايت</h2>
+        <p>
+          سيتى لايت أكبر متجر إلكتروني متخصص في بيع وحدات الإضاءة والديكور في
+          السعوديه. يمكنك أن تجد وتطلب كل احتياجاتك من وحدات الإضاءة والديكور في
+          مكان واحد في أي وقت ومن أي مكان مع التوصيل لأي مكان في مصر
+        </p>
+      </div>
+    </div>
+    <!-- End footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="java/cat.js"></script>
   </body>
