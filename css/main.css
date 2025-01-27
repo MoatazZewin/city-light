@@ -2317,6 +2317,10 @@ header .container .header-bottom > ul > li:hover .list-n {
   color: white;
 }
 
+.after-header-contact p {
+  display: flex;
+}
+
 .after-header-contact h2 {
   font-size: 3rem;
   color: white;
@@ -3251,3 +3255,323 @@ ul.list-over-view li:not(:last-child) {
 }
 
 /* end pagination */
+
+/* Start register page */
+
+.after-header-register {
+  margin-top: 170px;
+  height: 200px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.after-header-register p {
+  display: flex;
+  gap: 5px;
+}
+
+.after-header-register p a {
+  color: white;
+}
+
+.register-content {
+  padding: 50px 0;
+}
+
+.register-content .container {
+  display: flex;
+}
+
+@media (max-width: 750px) {
+  .register-content .container {
+    flex-direction: column;
+  }
+}
+
+.register-content .container .start-p,
+.register-content .container .end-p {
+  width: 50%;
+}
+
+.register-content .start-p {
+  border-inline-end: 1px solid #0000001a;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.register-content .start-p form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-content .start-p form p {
+  color: #777777;
+  line-height: 1.5;
+}
+
+.register-content .start-p form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.register-content .start-p form div.remember {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.register-content .start-p form div.remember a {
+  color: rgb(46, 122, 147);
+}
+
+.register-content .start-p form div.remember a:hover {
+  color: #2e7a93;
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+.register-content .start-p form div.remember div {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+}
+
+.register-content .start-p form div.remember div label,
+.register-content .start-p form div.remember div input {
+  cursor: pointer;
+}
+
+.register-content .start-p form > div > input {
+  height: 42px;
+  padding-inline-start: 10px;
+  border: 1px solid #0000001a;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.register-content .start-p form > div > label::after {
+  content: "*";
+  color: red;
+}
+
+.register-content .start-p form button {
+  height: 42px;
+  font-size: 1.1rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-content .end-p {
+  padding: 25px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 750px) {
+  .register-content .container .end-p,
+  .register-content .container .start-p {
+    width: 100%;
+    padding: 25px 10px;
+    border: none;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 990px) {
+  .register-content .start-p {
+    padding-inline-start: 0;
+  }
+}
+
+.register-content .end-p h4 {
+  font-size: 1.2rem;
+}
+
+.register-content .end-p p {
+  line-height: 1.5;
+  color: #777777;
+}
+
+.register-content .end-p a {
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: #f7f7f7;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: black;
+}
+
+.register-content .divider {
+  align-items: center;
+  display: none;
+}
+
+.register-content .divider span {
+  margin: 0 20px;
+}
+
+.register-content .divider::before,
+.register-content .divider::after {
+  content: "";
+  flex: 1 0 0;
+  border-bottom: 1px solid #0000001c;
+}
+
+@media (max-width: 750px) {
+  .register-content .divider {
+    display: flex;
+  }
+}
+
+/* End register page */
+
+/* Start forget password */
+
+.forget-content {
+  padding: 100px 0;
+}
+
+.forget-content .container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  max-width: 470px;
+  margin: auto;
+  gap: 15px;
+}
+
+.forget-content .container h4 {
+  border-bottom: 1px solid #0000001c;
+  padding-bottom: 10px;
+  color: #777777;
+}
+
+.forget-content .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.forget-content .container form label::after {
+  content: "*";
+  color: red;
+}
+
+.forget-content .container form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.forget-content .container form div input {
+  height: 39px;
+  border: 1px solid #0000001c;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.forget-content .container form button {
+  height: 42px;
+  font-size: 1.1rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* End forget password */
+
+/* Start otp  */
+.otp-content {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-content .container,
+.otp-content .otp-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.otp-content .container h4 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.otp-content .otp-head {
+  background-color: var(--main-color);
+  height: 65px;
+  width: 65px;
+  color: white;
+  border-radius: 50%;
+  font-size: 2.5em;
+}
+
+.otp-content .container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.otp-content .container form button {
+  width: 100%;
+  background-color: #f06d1da8;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding: 9px 0;
+  border-radius: 6px;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.otp-content .container form button:hover {
+  background-color: var(--main-color);
+}
+
+.otp-content .container form button.active {
+  pointer-events: all;
+}
+
+.otp-content .container .input-field {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.otp-content .container .input-field input {
+  height: 45px;
+  width: 45px;
+  border-radius: 6px;
+  outline: none;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1.25rem;
+}
+
+.otp-content .container .input-field input::-webkit-inner-spin-button,
+.otp-content .container .input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+
+/* End otp  */
