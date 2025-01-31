@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Google fonts cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template css File -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <div class="discount">
+        <div class="right">
+          <a href="#"> <img src="images/en.png" alt="" />ENGLISH</a>
+          <p>خصم إضافي 10% على طلبك! كود خصم: BF10</p>
+        </div>
+        <div class="left">
+          <span class="user" href="" id="user-open">حسابى</span>
+          <div class="icons-m">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-top">
+          <div class="icons">
+            <div class="cart" id="cart">
+              <span> <span class="price">0</span> ر.س</span>
+              <span class="top">
+                <i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </div>
+            <a class="top"><i class="fa-solid fa-heart heart"></i></a>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="ابحث عن المنتجات...." />
+          </div>
+          <div class="language">
+            <a class="holder" id="lang-active">
+              <img src="images/Flag_of_Saudi_Arabia.svg-150x150.png" alt="" />
+              <p>السعودية</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <div class="box">
+              <a class="lang" id="lang-en">
+                <img src="images/en.png" alt="" />
+                <p>ENGLISH</p>
+              </a>
+              <a class="lang" id="lang-ar">
+                <img src="images/Flag_of_Saudi_Arabia.svg-150x150.png" alt="" />
+                <p>السعودية</p>
+              </a>
+            </div>
+          </div>
+          <div class="log">
+            <a href="index.html"
+              ><img src="images/logo-removebg-preview.png" alt="logo photo"
+            /></a>
+          </div>
+          <button id="btn-toggle" data-expanded="false">
+            <p>القائمة</p>
+            <span class="nav-toggler-icon"> </span>
+          </button>
+        </div>
+
+        <div class="header-bottom">
+          <ul>
+            <li>
+              <a href="">ثريات<i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="list-n">
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">إنارة سقف<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="">مراوح سقف<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href=""
+                >سبوت و تراك لايت<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                >مصابيح طاولة و أرضية<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""> إنارة جدار<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href=""
+                >إنارة خارجية<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                >إنارة للأطفال<i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">لمبات<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+          </ul>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="ابحث عن المنتجات...." />
+          </div>
+        </div>
+      </div>
+      <!-- Start main menu -->
+      <div class="main-menu">
+        <div class="search">
+          <input type="text" placeholder="ابحث عن منتجات..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul>
+          <li><a href="">الرئيسية</a></li>
+          <li><a href="">احدث المنتجات</a></li>
+          <li><a href="">المنتجات</a></li>
+          <li><a href="">عروض</a></li>
+          <li><a href="">احدث المنتجات</a></li>
+          <li class="country">
+            <span>تغير الدولة<i class="fa-solid fa-chevron-down"></i> </span>
+            <ul id="country-menu">
+              <li>
+                <a class="lang">
+                  <img src="images/en.png" alt="" />
+                  <p>ENGLISH</p>
+                </a>
+              </li>
+              <li>
+                <a class="lang">
+                  <img
+                    src="images/Flag_of_Saudi_Arabia.svg-150x150.png"
+                    alt=""
+                  />
+                  <p>السعودية</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="">اتصل بينا</a></li>
+          <li>
+            <a href=""><i class="fa-solid fa-heart heart"></i>التفضيلات </a>
+          </li>
+          <li>
+            <span id="btn-menu-user">
+              <i class="fa-regular fa-user"></i>حسابى
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- Start main menu -->
+
+      <!-- Start User menu -->
+      <div class="user-account" id="user-account">
+        <h4>
+          تسجيل الدخول<span id="close-btn"
+            ><i class="fa-solid fa-xmark"></i>اغلق</span
+          >
+        </h4>
+
+        <form action="">
+          <div class="name">
+            <label for="user">إسم المستخدم او البريد الإليكتروني </label>
+            <input type="text" name="user" id="user" />
+          </div>
+          <div class="pass">
+            <label for="password">كلمة السر </label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button>تسجيل الدخول</button>
+          <div class="end">
+            <label for="remember">
+              <input type="checkbox" name="remeber" id="remeber" />
+              تذكرني
+            </label>
+            <a href="#">نسيت كلمه السر؟</a>
+          </div>
+          <div class="new-user">
+            <i class="fa-regular fa-user"></i>
+            <span>ليس لديك حساب؟</span>
+            <a href="">سجل حساب جديد</a>
+          </div>
+        </form>
+      </div>
+      <!-- End User menu -->
+
+      <!-- Start cart menu -->
+      <div class="user-cart" id="user-cart">
+        <h4>
+          سلة المشتريات<span id="close-btn-cart"
+            ><i class="fa-solid fa-xmark"></i>اغلق</span
+          >
+        </h4>
+
+        <div class="content">
+          <p>لا يوجد منتجات فى سله المشتريات</p>
+          <button id="btn-cart-back">العوده للتسوق</button>
+        </div>
+      </div>
+
+      <!-- End cart menu -->
+
+      <!-- layer to hidden content behind the meun -->
+      <div id="layer" class="layer"></div>
+    </header>
+    <!-- after header  -->
+    <div class="after-header-register">
+      <h2>حسابى</h2>
+      <p><a href="index.html">الرئيسيه </a> / حسابى</p>
+    </div>
+    <!-- end header  -->
+
+    <!-- Start dashboard  -->
+    <div class="dash-cont">
+      <div class="container">
+        <div class="side-bar">
+          <h3>حسابى</h3>
+          <nav>
+            <ul>
+              <li class="active">لوحة التحكم</li>
+              <li>الطلبات</li>
+              <li>العناوين</li>
+              <li>تفاصيل الحساب</li>
+              <li>My Coupons</li>
+              <li>My Store Credits</li>
+              <li>Points & Rewards</li>
+              <li>التفضيلات</li>
+              <li>تسجيل الخروج</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="dash-right-content">
+          <main class="user-dash-category active">
+            <p class="greeting">مرحبا <span class="user-name">Ahmed</span></p>
+            <p>
+              من خلال لوحة تحكم الحساب الخاص بك، يمكنك استعراض أحدث الطلبات،
+              إدارة عناوين الشحن والفواتير الخاصة بك، بالإضافة إلى تعديل كلمة
+              المرور وتفاصيل حسابك.
+            </p>
+            <div class="user-dash-detials">
+              <div class="box">
+                <i class="fa-solid fa-list-check"></i>
+                <p>الطلبات</p>
+              </div>
+              <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>العناوين</p>
+              </div>
+              <div class="box">
+                <i class="fa-regular fa-user"></i>
+                <p>تفاصيل الحساب</p>
+              </div>
+              <div class="box">
+                <i class="fa-solid fa-gear"></i>
+                <p>My Coupons</p>
+              </div>
+              <div class="box">
+                <i class="fa-solid fa-gear"></i>
+                <p>My Store Credits</p>
+              </div>
+              <div class="box">
+                <i class="fa-solid fa-gear"></i>
+                <p>Points & Rewards</p>
+              </div>
+              <div class="box">
+                <i class="fa-regular fa-heart"></i>
+                <p>التفضيلات</p>
+              </div>
+              <div class="box">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>تسجيل الخروج</p>
+              </div>
+            </div>
+          </main>
+
+          <main class="dash-orders">
+            <table>
+              <thead>
+                <tr>
+                  <th>الطلب</th>
+                  <th>التاريخ</th>
+                  <th>الحالة</th>
+                  <th>المجموع</th>
+                  <th>الإجراء</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="order-number" data-title="الرقم">#308320</td>
+                  <td class="order-data" data-title="التاريخ">23/01/2025</td>
+                  <td class="order-status" data-title="الحالة">مُلغى</td>
+                  <td class="order-total" data-title="المجموع">المجموع</td>
+                  <td class="order-actions" data-title="الاجراء">
+                    <button>معاينة</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </main>
+
+          <main class="address">
+            <p>العنوان التالي سيستخدم تلقائيا في الطلبات اللاحقة</p>
+            <div class="address-details">
+              <div class="contact-address">
+                <h3>عنوان المراسلات</h3>
+                <p class="edit">Edit عنوان المراسلات</p>
+                <div class="client-details">
+                  <h3>بيانات العميل</h3>
+                  <div class="all">
+                    <p>اسم العميل</p>
+                    <p class="client-name">Ahmed</p>
+                    <p>العنوان</p>
+                    <p class="client-address">helwan</p>
+                    <p>المحافظه</p>
+                    <p class="client-area">cairo</p>
+                    <p>الجوال</p>
+                    <p class="client-phone">01136-259-999</p>
+                    <p>email</p>
+                    <p class="client-phone">m@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="shipping-address">
+                <h3>عنوان الشحن</h3>
+                <p class="edit">Edit عنوان الشحن</p>
+                <div class="client-details">
+                  <h3>بيانات العميل</h3>
+                  <div class="all">
+                    <p>اسم العميل</p>
+                    <p class="client-name">Ahmed</p>
+                    <p>العنوان</p>
+                    <p class="client-address">helwan</p>
+                    <p>المحافظه</p>
+                    <p class="client-area">cairo</p>
+                    <p>الجوال</p>
+                    <p class="client-phone">01136-259-999</p>
+                    <p>email</p>
+                    <p class="client-phone">m@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <div class="address-edit">
+            <div class="right">
+              <h3>عنوان المراسلات</h3>
+
+              <form action="" class="address-edit-form">
+                <div class="first">
+                  <label for="first-name">لإسم الأول </label>
+                  <input type="text" name="first-name" id="first-name" />
+                </div>
+                <div class="family">
+                  <label for="family">اسم العائله</label>
+                  <input type="text" name="family-name" id="family" />
+                </div>
+
+                <label for="phone">رقم الجوال</label>
+                <input
+                  type="text"
+                  placeholder="050-123-4567"
+                  id="phone"
+                  name="phone"
+                />
+
+                <label for="">الدوله</label>
+                <input type="text" value="Saudi Arabia" disabled="" />
+                <label for="region">المنطقة</label>
+                <input type="text" name="region" id="region" />
+                <label for="city">المدينة</label>
+                <input type="text" id="city" name="city" />
+                <label for="address">العنوان</label>
+                <input type="text" id="address" name="address" />
+                <label for="email">البريد الالكنرونى </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  value="m@gmail"
+                  disabled
+                />
+
+                <button>save address</button>
+              </form>
+            </div>
+          </div>
+
+          <main class="edit-account">
+            <form action="" class="edit-account-form">
+              <div class="first">
+                <label for="first-name-edit">لإسم الأول </label>
+                <input
+                  type="text"
+                  name="first-name-edit"
+                  id="first-name-edit"
+                />
+              </div>
+              <div class="family">
+                <label for="family-edit">اسم العائله</label>
+                <input type="text" name="family-name-edit" id="family-edit" />
+              </div>
+
+              <label for="display-name">الاسم الظاهر</label>
+              <input type="text" id="display-name" name="display-name" />
+
+              <label for="email">البريد الالكنرونى </label>
+              <input
+                type="email"
+                name="email-accou"
+                id="email-accou"
+                value="m@gmail"
+                disabled
+              />
+
+              <fieldset>
+                <legend>تعديل كلمة السر</legend>
+                <label for="old-pass"
+                  >كلمة السر الحالية (إتركها فارغة إذا كنت لا تريد
+                  تعديلها)</label
+                >
+                <input type="password" id="old-pass" name="old-pass" />
+                <label for="new-pass"
+                  >كلمة السر الجديدة (إتركها فارغة إذا كنت لا تريد
+                  تعديلها)</label
+                >
+                <input type="password" id="new-pass" name="new-pass" />
+                <label for="new-pass-con">تأكدي كلمة السر الجديدة</label>
+                <input type="password" id="new-pass-con" name="new-pass-con" />
+              </fieldset>
+
+              <button>حفظ التعديلات</button>
+            </form>
+          </main>
+
+          <main class="my-coupons">
+            <h3>Available Coupons</h3>
+            <div>
+              <p>Sort by</p>
+              <select name="sort" id="sort">
+                <option value="latest last">latest last</option>
+                <option value="latest first">latest first</option>
+                <option value="price high to low">price high to low</option>
+                <option value="price low to high">price low to high</option>
+              </select>
+              <p>Sorry, you don't have any available coupons</p>
+            </div>
+          </main>
+
+          <main class="my-store-credits">
+            <div>
+              <h3>Store Credits</h3>
+              <p>Sorry, you don't have any available Store Credits.</p>
+            </div>
+            <div>
+              <h3>Used Credits</h3>
+              <p>Sorry, you don't have any available Store Credits.</p>
+            </div>
+          </main>
+
+          <main class="my-points">
+            <h3>My points</h3>
+            <div class="details">
+              <div class="box">
+                <i class="fa-solid fa-medal"></i>
+                <p>Available points</p>
+                <p>0</p>
+              </div>
+              <div class="box">
+                <i class="fa-solid fa-gift"></i>
+                <p>Redeemed points</p>
+                <p>0</p>
+              </div>
+              <div class="box">
+                <i class="fa-solid fa-gifts"></i>
+                <p>Used rewards</p>
+                <p>0</p>
+              </div>
+            </div>
+
+            <div class="my-rewards">
+              <h3>My rewards</h3>
+              <div class="btns-rewards">
+                <button class="active">
+                  <i class="fa-solid fa-gift"></i>rewards
+                </button>
+                <button>
+                  <i class="fa-solid fa-ticket-simple"></i>coupons
+                </button>
+                <button>
+                  <i class="fa-regular fa-clock"></i>used & expired coupons
+                </button>
+              </div>
+            </div>
+
+            <div class="rewards-text active">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <h4>Begin Your Rewards Journey!</h4>
+              <p>
+                Shop more and unlock amazing rewards! Discover all the
+                opportunities below!
+              </p>
+            </div>
+            <div class="coupon-text">
+              <i class="fa-solid fa-ticket"></i>
+              <h4>
+                Transform your points into savings! Convert to coupons now.
+              </h4>
+              <p>
+                Maximize the value of your earned points by converting them into
+                discount coupons. Make your shopping experience even more
+                rewarding
+              </p>
+            </div>
+            <div class="use-coupon-text">
+              <i class="fa-regular fa-clock"></i>
+              <h4>Used/Expired Coupons</h4>
+              <p>
+                The following are a list of coupons that you've used or got
+                expired.
+              </p>
+            </div>
+          </main>
+
+          <main class="my-favorite">
+            <div class="fav-header">
+              <p>قائمة المنتجات المفضلة</p>
+              <p class="icons">
+                Share: <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+              </p>
+            </div>
+
+            <div class="fav-products">
+              <div class="products">
+                <div class="box">
+                  <p class="del"><span>x</span> إزالة</p>
+                  <div class="image">
+                    <img src="images/fe-1.jpg" alt="" />
+                    <span class="discount"> -34%</span>
+
+                    <i class="fa-solid fa-magnifying-glass quick-look"></i>
+                  </div>
+                  <p>أباجورة تيمورا 1 لمبة أسود</p>
+                  <p>
+                    <span class="total"
+                      ><bdo dir="ltr"
+                        ><span class="price"> 747 EGP</span>
+                        <del>1,099 EGP</del></bdo
+                      ></span
+                    >
+                  </p>
+                  <button>اضف الى السله</button>
+                </div>
+                <div class="box">
+                  <p class="del"><span>x</span> إزالة</p>
+                  <div class="image">
+                    <img src="images/fe-2.jpg" alt="" />
+                    <span class="discount"> -34%</span>
+
+                    <i class="fa-solid fa-magnifying-glass quick-look"></i>
+                  </div>
+                  <p>أباجورة تيمورا 1 لمبة أسود</p>
+                  <p>
+                    <span class="total"
+                      ><bdo dir="ltr"
+                        ><span class="price"> 747 EGP</span>
+                        <del>1,099 EGP</del></bdo
+                      ></span
+                    >
+                  </p>
+                  <button>اضف الى السله</button>
+                </div>
+                <div class="box">
+                  <p class="del"><span>x</span> إزالة</p>
+                  <div class="image">
+                    <img src="images/fe-3.jpg" alt="" />
+                    <span class="discount"> -34%</span>
+
+                    <i class="fa-solid fa-magnifying-glass quick-look"></i>
+                  </div>
+                  <p>أباجورة تيمورا 1 لمبة أسود</p>
+                  <p>
+                    <span class="total"
+                      ><bdo dir="ltr"
+                        ><span class="price"> 747 EGP</span>
+                        <del>1,099 EGP</del></bdo
+                      ></span
+                    >
+                  </p>
+                  <button>اضف الى السله</button>
+                </div>
+                <div class="box">
+                  <p class="del"><span>x</span> إزالة</p>
+                  <div class="image">
+                    <img src="images/fe-1.jpg" alt="" />
+                    <span class="discount"> -34%</span>
+
+                    <i class="fa-solid fa-magnifying-glass quick-look"></i>
+                  </div>
+                  <p>أباجورة تيمورا 1 لمبة أسود</p>
+                  <p>
+                    <span class="total"
+                      ><bdo dir="ltr"
+                        ><span class="price"> 747 EGP</span>
+                        <del>1,099 EGP</del></bdo
+                      ></span
+                    >
+                  </p>
+                  <button>اضف الى السله</button>
+                </div>
+                <div class="box">
+                  <p class="del"><span>x</span> إزالة</p>
+                  <div class="image">
+                    <img src="images/fe-2.jpg" alt="" />
+                    <span class="discount"> -34%</span>
+
+                    <i class="fa-solid fa-magnifying-glass quick-look"></i>
+                  </div>
+                  <p>أباجورة تيمورا 1 لمبة أسود</p>
+                  <p>
+                    <span class="total"
+                      ><bdo dir="ltr"
+                        ><span class="price"> 747 EGP</span>
+                        <del>1,099 EGP</del></bdo
+                      ></span
+                    >
+                  </p>
+                  <button>اضف الى السله</button>
+                </div>
+                <div class="box">
+                  <p class="del"><span>x</span> إزالة</p>
+                  <div class="image">
+                    <img src="images/fe-3.jpg" alt="" />
+                    <span class="discount"> -34%</span>
+
+                    <i class="fa-solid fa-magnifying-glass quick-look"></i>
+                  </div>
+                  <p>أباجورة تيمورا 1 لمبة أسود</p>
+                  <p>
+                    <span class="total"
+                      ><bdo dir="ltr"
+                        ><span class="price"> 747 EGP</span>
+                        <del>1,099 EGP</del></bdo
+                      ></span
+                    >
+                  </p>
+                  <button>اضف الى السله</button>
+                </div>
+                <div class="box">
+                  <p class="del"><span>x</span> إزالة</p>
+                  <div class="image">
+                    <img src="images/fe-2.jpg" alt="" />
+                    <span class="discount"> -34%</span>
+
+                    <i class="fa-solid fa-magnifying-glass quick-look"></i>
+                  </div>
+                  <p>أباجورة تيمورا 1 لمبة أسود</p>
+                  <p>
+                    <span class="total"
+                      ><bdo dir="ltr"
+                        ><span class="price"> 747 EGP</span>
+                        <del>1,099 EGP</del></bdo
+                      ></span
+                    >
+                  </p>
+                  <button>اضف الى السله</button>
+                </div>
+                <div class="box">
+                  <p class="del"><span>x</span> إزالة</p>
+                  <div class="image">
+                    <img src="images/fe-3.jpg" alt="" />
+                    <span class="discount"> -34%</span>
+
+                    <i class="fa-solid fa-magnifying-glass quick-look"></i>
+                  </div>
+                  <p>أباجورة تيمورا 1 لمبة أسود</p>
+                  <p>
+                    <span class="total"
+                      ><bdo dir="ltr"
+                        ><span class="price"> 747 EGP</span>
+                        <del>1,099 EGP</del></bdo
+                      ></span
+                    >
+                  </p>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <div class="my-favorite-empty">
+            <i class="fa-regular fa-heart"></i>
+            <h2>قائمة التفضيلات فارغة.</h2>
+            <p>
+              ليس لديك أي منتجات في قائمة الرغبات حتى الآن. ستجد الكثير من
+              المنتجات المثيرة للاهتمام على صفحة "المتجر" الخاصة بنا.
+            </p>
+            <a href="index.html">العودة للتسوق</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End dashboard  -->
+
+    <!-- Start services -->
+    <div class="services">
+      <div class="box">
+        <img src="images/استبدال.png" alt="" />
+        <h4>الإستبدال و الإسترجاع</h4>
+      </div>
+      <div class="box">
+        <img src="images/خدمه.png" alt="" />
+        <h4>خدمة العملاء</h4>
+      </div>
+      <div class="box">
+        <img src="images/دفع.png" alt="" />
+        <h4>دفع أون لاين</h4>
+      </div>
+      <div class="box">
+        <img src="images/شحن.png" alt="" />
+        <h4>شحن مجاني</h4>
+      </div>
+    </div>
+
+    <!-- End services -->
+    <!-- Start footer -->
+    <div class="footer footer-not-found">
+      <div class="useful">
+        <h4>روابط مفيدة</h4>
+        <ul>
+          <li><a href="#">الأكثر مبيعا في ستى لايت</a></li>
+          <li><a href="#">ترشيحات ستى لايت</a></li>
+          <li><a href="#">أحدث المنتجات</a></li>
+        </ul>
+      </div>
+      <div class="quick">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="3">الرئيسية</a></li>
+          <li><a href="#">عن ستى لايت</a></li>
+          <li><a href="#">المقالات</a></li>
+          <li><a href="#">سياسة ستى لايت</a></li>
+        </ul>
+      </div>
+
+      <div class="about-footer">
+        <h2>سيتى لايت</h2>
+        <p>
+          سيتى لايت أكبر متجر إلكتروني متخصص في بيع وحدات الإضاءة والديكور في
+          السعوديه. يمكنك أن تجد وتطلب كل احتياجاتك من وحدات الإضاءة والديكور في
+          مكان واحد في أي وقت ومن أي مكان مع التوصيل لأي مكان في مصر
+        </p>
+      </div>
+    </div>
+    <!-- End footer -->
+    <script src="java/dashboard.js"></script>
+  </body>
+</html>
