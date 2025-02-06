@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- Google fonts cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template css File -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <div class="discount">
+        <div class="right">
+          <a href="#"> <img src="images/en.png" alt="" />ENGLISH</a>
+          <p>خصم إضافي 10% على طلبك! كود خصم: BF10</p>
+        </div>
+        <div class="left">
+          <span class="user" href="" id="user-open">حسابى</span>
+          <div class="icons-m">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-top">
+          <div class="icons">
+            <div class="cart" id="cart">
+              <span> <span class="price">0</span> ر.س</span>
+              <span class="top">
+                <i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </div>
+            <a class="top"><i class="fa-solid fa-heart heart"></i></a>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="ابحث عن المنتجات...." />
+          </div>
+          <div class="language">
+            <a class="holder" id="lang-active">
+              <img src="images/Flag_of_Saudi_Arabia.svg-150x150.png" alt="" />
+              <p>السعودية</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <div class="box">
+              <a class="lang" id="lang-en">
+                <img src="images/en.png" alt="" />
+                <p>ENGLISH</p>
+              </a>
+              <a class="lang" id="lang-ar">
+                <img src="images/Flag_of_Saudi_Arabia.svg-150x150.png" alt="" />
+                <p>السعودية</p>
+              </a>
+            </div>
+          </div>
+          <div class="log">
+            <a href="index.html"
+              ><img src="images/logo-removebg-preview.png" alt="logo photo"
+            /></a>
+          </div>
+          <button id="btn-toggle" data-expanded="false">
+            <p>القائمة</p>
+            <span class="nav-toggler-icon"> </span>
+          </button>
+        </div>
+
+        <div class="header-bottom">
+          <ul>
+            <li>
+              <a href="">ثريات<i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="list-n">
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">إنارة سقف<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="">مراوح سقف<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href=""
+                >سبوت و تراك لايت<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                >مصابيح طاولة و أرضية<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""> إنارة جدار<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href=""
+                >إنارة خارجية<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                >إنارة للأطفال<i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">لمبات<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+          </ul>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="ابحث عن المنتجات...." />
+          </div>
+        </div>
+      </div>
+      <!-- Start main menu -->
+      <div class="main-menu">
+        <div class="search">
+          <input type="text" placeholder="ابحث عن منتجات..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul>
+          <li><a href="">الرئيسية</a></li>
+          <li><a href="">احدث المنتجات</a></li>
+          <li><a href="">المنتجات</a></li>
+          <li><a href="">عروض</a></li>
+          <li><a href="">احدث المنتجات</a></li>
+          <li class="country">
+            <span>تغير الدولة<i class="fa-solid fa-chevron-down"></i> </span>
+            <ul id="country-menu">
+              <li>
+                <a class="lang">
+                  <img src="images/en.png" alt="" />
+                  <p>ENGLISH</p>
+                </a>
+              </li>
+              <li>
+                <a class="lang">
+                  <img
+                    src="images/Flag_of_Saudi_Arabia.svg-150x150.png"
+                    alt=""
+                  />
+                  <p>السعودية</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="">اتصل بينا</a></li>
+          <li>
+            <a href=""><i class="fa-solid fa-heart heart"></i>التفضيلات </a>
+          </li>
+          <li>
+            <span id="btn-menu-user">
+              <i class="fa-regular fa-user"></i>حسابى
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- Start main menu -->
+
+      <!-- Start User menu -->
+      <div class="user-account" id="user-account">
+        <h4>
+          تسجيل الدخول<span id="close-btn"
+            ><i class="fa-solid fa-xmark"></i>اغلق</span
+          >
+        </h4>
+
+        <form action="">
+          <div class="name">
+            <label for="user">إسم المستخدم او البريد الإليكتروني </label>
+            <input type="text" name="user" id="user" />
+          </div>
+          <div class="pass">
+            <label for="password">كلمة السر </label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button>تسجيل الدخول</button>
+          <div class="end">
+            <label for="remember">
+              <input type="checkbox" name="remeber" id="remeber" />
+              تذكرني
+            </label>
+            <a href="#">نسيت كلمه السر؟</a>
+          </div>
+          <div class="new-user">
+            <i class="fa-regular fa-user"></i>
+            <span>ليس لديك حساب؟</span>
+            <a href="">سجل حساب جديد</a>
+          </div>
+        </form>
+      </div>
+      <!-- End User menu -->
+
+      <!-- Start cart menu -->
+      <div class="user-cart" id="user-cart">
+        <h4>
+          سلة المشتريات<span id="close-btn-cart"
+            ><i class="fa-solid fa-xmark"></i>اغلق</span
+          >
+        </h4>
+
+        <div class="content">
+          <p>لا يوجد منتجات فى سله المشتريات</p>
+          <button id="btn-cart-back">العوده للتسوق</button>
+        </div>
+      </div>
+
+      <!-- End cart menu -->
+
+      <!-- layer to hidden content behind the meun -->
+      <div id="layer" class="layer"></div>
+    </header>
+    <!-- after header  -->
+    <div class="after-header-register">
+      <h2>مقالات</h2>
+    </div>
+    <!-- end header  -->
+
+    <!-- start articles content -->
+    <div class="article-details">
+      <div class="container">
+        <a href="#" class="meta-post-categies">أسلوب حياة</a>
+        <h2>الإضاءة المناسبة للمذاكرة</h2>
+        <div class="image">
+          <img
+            src="images/blog-الإضاءة-المناسبةللمذاكرة-optimized.jpg"
+            alt="photo"
+          />
+          <span class="date">
+            <span class="day">01</span>
+            <span class="month">SEP</span>
+          </span>
+        </div>
+        <h3>
+          إن وجود خطة إضاءة مدروسة جيدًا لمنزلك أمر ضروري في التصميم الجيد، لذلك
+          لذا تقدم لكم إنارات بعض النصائح حول كيفية مزج تركيبات الإضاءة الخاصة
+          بك ومطابقتها لوضعها في مساحة واحدة:
+        </h3>
+        <figure>
+          <img src="images/light-optimized.jpg" alt="photo" />
+          <figcaption>
+            <h4>استخدم وحدات الإضاءة التي تشترك في سمة مشتركة</h4>
+            <p>
+              إن استخدام تركيبات ذات نفس الأشكال أو الألوان أو المواد أو الأنماط
+              المتشابهة سيجلب الانسجام إلى المساحة ويسمح للمصابيح الخاصة بك
+              بالاندماج بسلاسة. على سبيل المثال، يمكن أن تشترك الشمعدانات
+              والثريا في غرفة الطعام في ​​الطراز و اللون، وبالتالي فهي تعمل معًا
+              لتشكل إضاءة رائعة و مظهر جذاب.
+            </p>
+          </figcaption>
+        </figure>
+
+        <div class="media">
+          <div class="icons-m">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="btns-nav" dir="rtl">
+          <a class="next-btn" href="#">
+            <p>الاحدث</p>
+            <p>الإضاءة المناسبة للمذاكرة</p>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a class="prev-btn" href="#">
+            <p>الاقدم</p>
+            <p>أفكار بسيطة لتزيين غرف منزلك في رمضان</p>
+            <i class="fa-solid fa-chevron-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end articles content -->
+
+    <!-- Start services -->
+    <div class="services">
+      <div class="box">
+        <img src="images/استبدال.png" alt="" />
+        <h4>الإستبدال و الإسترجاع</h4>
+      </div>
+      <div class="box">
+        <img src="images/خدمه.png" alt="" />
+        <h4>خدمة العملاء</h4>
+      </div>
+      <div class="box">
+        <img src="images/دفع.png" alt="" />
+        <h4>دفع أون لاين</h4>
+      </div>
+      <div class="box">
+        <img src="images/شحن.png" alt="" />
+        <h4>شحن مجاني</h4>
+      </div>
+    </div>
+
+    <!-- End services -->
+    <!-- Start footer -->
+    <div class="footer footer-not-found">
+      <div class="useful">
+        <h4>روابط مفيدة</h4>
+        <ul>
+          <li><a href="#">الأكثر مبيعا في ستى لايت</a></li>
+          <li><a href="#">ترشيحات ستى لايت</a></li>
+          <li><a href="#">أحدث المنتجات</a></li>
+        </ul>
+      </div>
+      <div class="quick">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="3">الرئيسية</a></li>
+          <li><a href="#">عن ستى لايت</a></li>
+          <li><a href="#">المقالات</a></li>
+          <li><a href="#">سياسة ستى لايت</a></li>
+        </ul>
+      </div>
+
+      <div class="about-footer">
+        <h2>سيتى لايت</h2>
+        <p>
+          سيتى لايت أكبر متجر إلكتروني متخصص في بيع وحدات الإضاءة والديكور في
+          السعوديه. يمكنك أن تجد وتطلب كل احتياجاتك من وحدات الإضاءة والديكور في
+          مكان واحد في أي وقت ومن أي مكان مع التوصيل لأي مكان في مصر
+        </p>
+      </div>
+    </div>
+    <!-- End footer -->
+    <script src="java/main.js"></script>
+  </body>
+</html>
