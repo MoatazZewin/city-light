@@ -161,11 +161,11 @@ function initialzeSwiper() {
     spaceBetween: 20, // Add space between slides
     loop: true, // Enable infinite looping
     rtl: isRTL,
-    autoplay: {
-      delay: 3000, // Auto-slide every 3 seconds
-      disableOnInteraction: false, // Keep autoplay after interaction
-      reverseDirection: true,
-    },
+    // autoplay: {
+    //   delay: 3000, // Auto-slide every 3 seconds
+    //   disableOnInteraction: false, // Keep autoplay after interaction
+    //   reverseDirection: true,
+    // },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
